@@ -1,0 +1,19 @@
+FAILED MAIN
+
+public static void main(String[] args) throws Exception {
+		    
+	  	File file = new File("/home/pavlos/Documents/test/wiki-Vote.txt"); 
+	
+	    BufferedReader br = new BufferedReader(new FileReader(file)); 
+	
+		/*
+		 * String st; while ((st = br.readLine()) != null) System.out.println(st);
+		 */
+	    
+	    Scanner scanner = new Scanner(file).useDelimiter("\t");
+	    HashMap<String, String> graph = new HashMap<String, String>();
+	    while(scanner.hasNext()){
+	    	graph.put(scanner.next(), scanner.next());
+	    }
+		    
+	}
